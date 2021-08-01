@@ -44,6 +44,7 @@ int main () {
     std::cout << "Rand Euler orig: X = " << rand_euler_orig[0] << " Y = " << rand_euler_orig[1] << " Z = " << rand_euler_orig[2] << std::endl;
     std::cout << "======================================================\n";
 
+
     Eigen::Matrix3d random_rot_matrix;
     random_rot_matrix = Eigen::AngleAxisd(rand_x, Eigen::Vector3d::UnitX()) 
         * Eigen::AngleAxisd(rand_y, Eigen::Vector3d::UnitY())
